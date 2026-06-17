@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maison | Início</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
+
+    <header role="banner">
+        <a href="index.html" class="logo" aria-label="Maison - Página Inicial">Ma<span>ison</span></a>
+        <nav role="navigation" aria-label="Menu principal">
+            <ul>
+                <li><a href="index.html" class="active" aria-current="page">Início</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="contactos.html">Contactos</a></li>
+                <li><a href="autores.html">Autores</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="conteudo-principal" role="main">
+        <section class="hero" aria-labelledby="hero-title">
+            <h1 id="hero-title" class="gold">Uma experiência à mesa</h1>
+            <p>Cozinha contemporânea com raízes na tradição portuguesa. Uma viagem sensorial onde cada prato conta uma história.</p>
+            <a href="reservas.html" class="btn">Reservar Mesa</a>
+        </section>
+
+        <div class="container">
+            <h2 class="gold" style="text-align:center; margin-bottom: 20px;">Destaques do Menu</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="Imagens/vieira.jpg" alt="Prato de Vieira do Algarve com creme de coentros e ovas cítricas">
+                    <div class="card-content">
+                        <h3>Vieira do Algarve</h3>
+                        <p>Beurre blanc de coentros, caviar de limão, microgreens.</p>
+                        <a href="detalhes.html?prato=vieira" class="btn" aria-label="Ver detalhes sobre Vieira do Algarve">Ver Detalhes</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Imagens/bacalhau.png" alt="Posta de Bacalhau à Brasa guarnecida com puré de grão de bico">
+                    <div class="card-content">
+                        <h3>Bacalhau à Brasa</h3>
+                        <p>Grão confitado, azeite de ervas, azeitona desidratada.</p>
+                        <a href="detalhes.html?prato=bacalhau" class="btn" aria-label="Ver detalhes sobre Bacalhau à Brasa">Ver Detalhes</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Imagens/novilho.jpg" alt="Lombo de Novilho selado acompanhado por puré de raiz de aipo e trufas">
+                    <div class="card-content">
+                        <h3>Lombo de Novilho</h3>
+                        <p>Purê de celeriac, jus de ervas, trufa negra.</p>
+                        <a href="detalhes.html?prato=lombo" class="btn" aria-label="Ver detalhes sobre Lombo de Novilho">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer role="contentinfo">
+        <ul class="social-menu" aria-label="Canais sociais e redes">
+            <li><a href="#" aria-label="Siga-nos no Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a href="#" aria-label="Siga-nos no Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+            <li><a href="#" aria-label="Siga-nos no Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+        </ul>
+        <p class="footer-text">© 2026 Maison Fine Dining. Porto, Portugal. Todos os direitos reservados.</p>
+        <p class="footer-text" style="margin-top: 10px; color: #C4A676;">Trabalho Académico - UBI</p>
+    </footer>
+</body>
+</html>

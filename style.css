@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
+
+/* =========================================
+   CONFIGURAÇÕES BASE & ACESSIBILIDADE
+   ========================================= */
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+html {
+    font-size: 16px; /* Tamanho base de fonte acessível de acordo com as diretrizes */
+    scroll-behavior: smooth;
+}
+
+body { 
+    font-family: 'Lato', sans-serif; 
+    background-color: #1E1C1A; /* Fundo escuro suave fiel ao Figma */
+    color: #F4F4F4; 
+    line-height: 1.6; 
+}
+
+h1, h2, h3, h4 { 
+    font-family: 'Playfair Display', serif; 
+    font-weight: normal; 
+}
+
+.gold { 
+    color: #C4A676; 
+}
+
+/* Foco visível para navegação via teclado (Acessibilidade) */
+a:focus, button:focus, input:focus, textarea:focus, select:focus {
+    outline: 3px solid #C4A676;
+    outline-offset: 3px;
+}
+
+/* Link de salto oculto que aparece apenas via foco de teclado */
+.skip-link {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    background: #C4A676;
+    color: #151413;
+    padding: 10px 20px;
+    z-index: 10000;
+    transition: top 0.3s ease;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* =========================================
+   LAYOUT & COMPONENTES
+   ========================================= */
+/* Navbar */
+header { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px 5%; 
+    background-color: #151413; 
+    border-bottom: 1px solid #2A2825; 
+    position: sticky; 
+    top: 0; 
+    z-index: 1000; 
+}
+
+.logo { 
+    font-size: 28px; 
+    font-family: 'Playfair Display', serif; 
+    color: #fff; 
+    text-decoration: none; 
+    letter-spacing: 1px; 
+}
+
+.logo span { 
+    color: #C4A676; 
+}
+
+nav ul { 
+    list-style: none; 
+    display: flex; 
+    gap: 30px; 
+}
+
+nav a { 
+    color: #fff; 
+    text-decoration: none; 
+    font-size: 16px; 
+    letter-spacing: 1px; 
+    transition: color 0.3s; 
+}
+
+nav a:hover, nav a.active { 
+    color: #C4A676; 
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(rgba(30,28,26,0.8), rgba(30,28,26,0.9)), url('Imagens/hero-bg.jpg') no-repeat center center/cover;
+    margin-bottom: 50px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    color: #ccc;
+}
+
+/* Content Container */
+.container { 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 40px 20px; 
+}
+
+/* Grid & Cards */
+.grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 30px; 
+    margin-top: 40px;
+}
+
+.card { 
+    background: #151413; 
+    border: 1px solid #2A2825; 
+    border-radius: 4px; 
+    overflow: hidden; 
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img { 
+    width: 100%; 
+    height: 250px; 
+    object-fit: cover; 
+    border-bottom: 1px solid #2A2825;
+}
+
+.card-content { 
+    padding: 25px; 
+}
+
+.card-content h3 { 
+    font-size: 22px; 
+    margin-bottom: 10px; 
+    color: #fff;
+}
+
+.card-content p { 
+    color: #9A958E; 
+    font-size: 15px; 
+    margin-bottom: 20px;
+    height: 45px;
+    overflow: hidden;
+}
+
+.price {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Botões */
+.btn { 
+    display: inline-block; 
+    background: transparent; 
+    color: #C4A676; 
+    border: 1px solid #C4A676; 
+    padding: 10px 25px; 
+    text-decoration: none; 
+    text-transform: uppercase; 
+    font-size: 13px; 
+    letter-spacing: 1px; 
+    transition: all 0.3s; 
+}
+
+.btn:hover { 
+    background: #C4A676; 
+    color: #151413; 
+}
+
+/* Formulários & Contactos */
+.contact-wrapper { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 50px; 
+    align-items: start; 
+}
+
+.form-group { 
+    margin-bottom: 20px; 
+    text-align: left;
+}
+
+.form-group label { 
+    display: block; 
+    margin-bottom: 8px; 
+    color: #C4A676; 
+    font-size: 14px; 
+    text-transform: uppercase; 
+    letter-spacing: 1px;
+}
+
+.form-group input, .form-group textarea, .form-group select { 
+    width: 100%; 
+    padding: 12px; 
+    background: #151413; 
+    border: 1px solid #2A2825; 
+    color: #fff; 
+    font-family: 'Lato', sans-serif; 
+    font-size: 16px;
+}
+
+.form-group input:focus, .form-group textarea:focus, .form-group select:focus { 
+    border-color: #C4A676; 
+}
+
+.map-container iframe { 
+    width: 100%; 
+    height: 100%; 
+    min-height: 400px; 
+    border: none; 
+    filter: grayscale(100%) invert(90%) contrast(1.2); 
+}
+
+/* Detalhes do Item */
+.detail-wrapper { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 50px; 
+    align-items: start; 
+    margin-top: 30px;
+}
+
+.detail-img { 
+    width: 100%; 
+    border: 1px solid #C4A676; 
+}
+
+.multimedia-section { 
+    margin-top: 50px; 
+    text-align: center; 
+}
+
+.multimedia-section iframe, .multimedia-section video { 
+    width: 100%; 
+    max-width: 800px; 
+    height: 450px; 
+    border: 1px solid #2A2825; 
+}
+
+/* Lista de Ingredientes */
+#detalhe-ingredientes {
+    list-style: none;
+    margin-top: 20px;
+}
+#detalhe-ingredientes li {
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+/* Footer & Redes Sociais */
+footer { 
+    background: #151413; 
+    padding: 50px 20px; 
+    text-align: center; 
+    border-top: 1px solid #2A2825; 
+    margin-top: 50px; 
+}
+
+.social-menu { 
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+    list-style: none; 
+    margin-bottom: 20px; 
+}
+
+.social-menu a {
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-menu a:hover {
+    color: #C4A676;
+}
+
+.footer-text { 
+    font-size: 14px; 
+    color: #7a7570; 
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maison | Contactos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
+
+    <header role="banner">
+        <a href="index.html" class="logo" aria-label="Maison - Página Inicial">Ma<span>ison</span></a>
+        <nav role="navigation" aria-label="Menu principal">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="contactos.html" class="active" aria-current="page">Contactos</a></li>
+                <li><a href="autores.html">Autores</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="conteudo-principal" role="main" class="container">
+        <h1 class="gold" style="text-align: center; margin-bottom: 50px; font-size: 40px;">Fale Connosco</h1>
+        
+        <div class="contact-wrapper">
+            <section aria-labelledby="form-title">
+                <h3 id="form-title" class="gold" style="margin-bottom: 20px;">Envie uma Mensagem</h3>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" id="nome" name="nome" required aria-required="true" placeholder="Escreva o seu nome...">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail Corporativo ou Pessoal</label>
+                        <input type="email" id="email" name="email" required aria-required="true" placeholder="Exemplo: cliente@provedor.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="assunto">Assunto da Mensagem</label>
+                        <input type="text" id="assunto" name="assunto" required aria-required="true" placeholder="Motivo do contacto...">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" required aria-required="true" placeholder="Escreva a sua mensagem detalhadamente..."></textarea>
+                    </div>
+                    <button type="submit" class="btn" style="width: 100%; cursor: pointer; font-weight: bold;">Enviar Mensagem</button>
+                </form>
+            </section>
+
+            <section aria-labelledby="map-title">
+                <h3 id="map-title" class="gold" style="margin-bottom: 20px;">Localização</h3>
+                <address style="font-style: normal; margin-bottom: 20px;">
+                    <p style="margin-bottom: 10px; color: #ccc;"><i class="fas fa-map-marker-alt gold" style="margin-right: 10px;" aria-hidden="true"></i> Rua dos Clérigos, 48, 4050-111 Porto, Portugal</p>
+                    <p style="margin-bottom: 10px; color: #ccc;"><i class="fas fa-phone gold" style="margin-right: 10px;" aria-hidden="true"></i> +351 222 345 678</p>
+                    <p style="margin-bottom: 30px; color: #ccc;"><i class="fas fa-envelope gold" style="margin-right: 10px;" aria-hidden="true"></i> reservas@maison.pt</p>
+                </address>
+                
+                <div class="map-container" style="height: 350px; border: 1px solid #333;">
+                    <iframe title="Mapa interativo de localização do restaurante Maison na baixa do Porto" src="https://maps.google.com/maps?q=Rua%20dos%20Cl%C3%A9rigos%2048,%20Porto&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer role="contentinfo">
+        <ul class="social-menu" aria-label="Canais sociais e redes">
+            <li><a href="#" aria-label="Siga-nos no Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a href="#" aria-label="Siga-nos no Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+            <li><a href="#" aria-label="Siga-nos no Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#" aria-label="Consulte-nos no Tripadvisor"><i class="fab fa-tripadvisor" aria-hidden="true"></i></a></li>
+        </ul>
+        <p class="footer-text">© 2026 Maison Fine Dining. Porto, Portugal. Todos os direitos reservados.</p>
+        <p class="footer-text" style="margin-top: 10px;">Projeto Académico - UBI - Composição de Interfaces Multiplataforma</p>
+    </footer>
+</body>
+</html>

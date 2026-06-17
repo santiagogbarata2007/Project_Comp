@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maison | Menu</title>
+    <link class="iel" rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
+
+    <header role="banner">
+        <a href="index.html" class="logo" aria-label="Maison - Página Inicial">Ma<span>ison</span></a>
+        <nav role="navigation" aria-label="Menu principal">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="menu.html" class="active" aria-current="page">Menu</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="contactos.html">Contactos</a></li>
+                <li><a href="autores.html">Autores</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="conteudo-principal" role="main" class="container">
+        <h1 class="gold" style="text-align: center; margin-bottom: 10px; font-size: 40px;">Menu Degustação</h1>
+        <p style="text-align: center; color: #9A958E; margin-bottom: 50px; letter-spacing: 2px; text-transform: uppercase;">Temporada de Outono · 7 Momentos</p>
+        
+        <section aria-labelledby="categoria-entradas">
+            <h2 id="categoria-entradas" style="text-align: center; margin: 40px 0 20px 0; letter-spacing: 2px; font-size: 28px;" class="gold">Entradas</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="Imagens/vieira.jpg" alt="Vieira do Algarve laminada com finas ervas aromáticas">
+                    <div class="card-content">
+                        <h3>Vieira do Algarve</h3>
+                        <p>Beurre blanc de coentros, caviar de limão, microgreens.</p>
+                        <span class="price gold">€ 24</span>
+                        <a href="detalhes.html?prato=vieira" class="btn" aria-label="Ver detalhes de Vieira do Algarve">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section aria-labelledby="categoria-principais">
+            <h2 id="categoria-principais" style="text-align: center; margin: 60px 0 20px 0; letter-spacing: 2px; font-size: 28px;" class="gold">Pratos Principais</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="Imagens/bacalhau.png" alt="Posta tradicional de bacalhau assada na brasa aberta ao meio">
+                    <div class="card-content">
+                        <h3>Bacalhau à Brasa</h3>
+                        <p>Grão confitado, azeite de ervas, azeitona desidratada.</p>
+                        <span class="price gold">€ 38</span>
+                        <a href="detalhes.html?prato=bacalhau" class="btn" aria-label="Ver detalhes de Bacalhau à Brasa">Ver Detalhes</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Imagens/novilho.jpg" alt="Naco de lombo de novilho alto grelhado ao ponto">
+                    <div class="card-content">
+                        <h3>Lombo de Novilho</h3>
+                        <p>Purê de celeriac, jus de ervas, trufa negra.</p>
+                        <span class="price gold">€ 42</span>
+                        <a href="detalhes.html?prato=lombo" class="btn" aria-label="Ver detalhes de Lombo de Novilho">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section aria-labelledby="categoria-sobremesas">
+            <h2 id="categoria-sobremesas" style="text-align: center; margin: 60px 0 20px 0; letter-spacing: 2px; font-size: 28px;" class="gold">Sobremesas</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="Imagens/pastel.jpg" alt="Sobremesa folhada inspirada no pastel de nata tradicional">
+                    <div class="card-content">
+                        <h3>Pastel de Nata Desconstruído</h3>
+                        <p>Creme de baunilha, caramelo salgado, telha crocante.</p>
+                        <span class="price gold">€ 16</span>
+                        <a href="detalhes.html?prato=pastel" class="btn" aria-label="Ver detalhes de Pastel de Nata Desconstruído">Ver Detalhes</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Imagens/chocolate.jpg" alt="Esfera texturizada de chocolate negro brilhante com pedaços de avelã">
+                    <div class="card-content">
+                        <h3>Texturas de Chocolate</h3>
+                        <p>Ganache de chocolate 70%, gel de mirtilo, esponja de avelã.</p>
+                        <span class="price gold">€ 18</span>
+                        <a href="detalhes.html?prato=texturas" class="btn" aria-label="Ver detalhes de Texturas de Chocolate">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <ul class="social-menu" aria-label="Canais sociais e redes">
+            <li><a href="#" aria-label="Siga-nos no Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a href="#" aria-label="Siga-nos no Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+            <li><a href="#" aria-label="Siga-nos no Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+        </ul>
+        <p class="footer-text">© 2026 Maison Fine Dining. Porto, Portugal. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

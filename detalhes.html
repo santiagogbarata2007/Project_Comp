@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="pagina-titulo">Maison | Detalhes do Prato</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
+
+    <header role="banner">
+        <a href="index.html" class="logo" aria-label="Maison - Página Inicial">Ma<span>ison</span></a>
+        <nav role="navigation" aria-label="Menu principal">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="contactos.html">Contactos</a></li>
+                <li><a href="autores.html">Autores</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="conteudo-principal" role="main" class="container">
+        <a href="menu.html" style="color: #C4A676; text-decoration: none; display: inline-block; margin-bottom: 30px; letter-spacing: 1px; font-size: 14px; text-transform: uppercase;"><i class="fas fa-arrow-left" aria-hidden="true"></i> Voltar ao Menu</a>
+        
+        <div class="detail-wrapper">
+            <div>
+                <img id="detalhe-img" class="detail-img" src="" alt="Carregando imagem do prato de alta cozinha...">
+            </div>
+            <section aria-labelledby="detalhe-titulo">
+                <h1 id="detalhe-titulo" class="gold" style="font-size: 36px; margin-bottom: 10px;">Nome do Prato</h1>
+                <span id="detalhe-preco" class="price gold" style="font-size: 24px; margin-bottom: 20px;">€ 00</span>
+                <p id="detalhe-descricao" style="color: #ccc; margin-bottom: 30px; font-size: 16px; line-height: 1.8;">Descrição detalhada do prato.</p>
+                
+                <h3 class="gold" style="font-size: 20px; margin-bottom: 15px;">Ingredientes Principais</h3>
+                <ul id="detalhe-ingredientes" aria-label="Ingredientes do prato">
+                    </ul>
+            </section>
+        </div>
+
+        <section class="multimedia-section" aria-label="Vídeo de preparação do prato">
+            <h2 class="gold" style="margin-bottom: 25px; font-size: 24px;">Preparação & Conceito</h2>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <video controls style="width: 100%; border: 1px solid #2A2825; background: #000;">
+                    <source src="Videos/preparacao.mp4" type="video/mp4">
+                    O seu navegador não suporta a visualização de vídeos em HTML5.
+                </video>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <p class="footer-text">© 2026 Maison Fine Dining. Porto, Portugal. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        const pratosData = {
+            vieira: {
+                titulo: 'Vieira do Algarve',
+                preco: '€ 24',
+                descricao: 'Frestas do Atlântico combinadas com a sofisticação algarvia. As vieiras são delicadamente seladas e envolvidas num molho untuoso clássico enriquecido com coentros regionais frescos, terminando com o rebentamento cítrico do caviar de limão.',
+                imagem: 'Imagens/vieira.jpg',
+                alt: 'Prato fundo contendo uma vieira perfeitamente selada ao centro, coberta com creme de coentros claro e pequenas esferas de ovas de limão.',
+                ingredientes: ['Vieira fresca das águas do sul', 'Molho Beurre Blanc aromatizado', 'Coentros orgânicos', 'Caviar de limão ou ovas cítricas']
+            },
+            bacalhau: {
+                titulo: 'Bacalhau à Brasa',
+                preco: '€ 38',
+                descricao: 'A nossa reinterpretação do fiel amigo. Uma posta de lombo alto submetida ao calor forte do carvão vegetal, mantendo as lascas suculentas. Acompanha com uma emulsão aveludada de grão de bico cozido lentamente e apontamentos crocantes de azeitona galega desidratada.',
+                imagem: 'Imagens/bacalhau.png',
+                alt: 'Posta alta de lombo de bacalhau assada à brasa sobre uma cama de puré de grão de bico, decorada com azeite verde e poeira de azeitona preta.',
+                ingredientes: ['Lombo alto de Bacalhau de cura tradicional', 'Grão de bico confitado em azeite de Trás-os-Montes', 'Infusão de azeite de ervas finas', 'Azeitona desidratada moída']
+            },
+            lombo: {
+                titulo: 'Lombo de Novilho',
+                preco: '€ 42',
+                descricao: 'Carne premium selecionada de pastagens nacionais, selada em lume vivo para preservar os sucos interiores. Servida sobre um puré sedoso e aromático de raiz de aipo, regada com o molho clássico reduzido da própria carne e lâminas finas de trufa negra fresca.',
+                imagem: 'Imagens/novilho.jpg',
+                alt: 'Medalhão de lombo de novilho grelhado ao ponto, disposto no prato ao lado de um puré cremoso de aipo, decorado com lascas finas de trufa.',
+                ingredientes: ['Lombo de Novilho certificado', 'Raiz de aipo (celeriac) transformada em puré', 'Jus/Molho concentrado de carne com ervas de cheiro', 'Trufa negra fresca laminada']
+            },
+            pastel: {
+                titulo: 'Pastel de Nata Desconstruído',
+                preco: '€ 16',
+                descricao: 'Uma homenagem contemporânea à pastelaria portuguesa. Desconstruímos a textura clássica num creme de gema sedoso infundido com vagem de baunilha Bourbon, contrastado pela textura de uma calda vítrea de caramelo salgado e uma telha folhada ultracrocante.',
+                imagem: 'Imagens/pastel.jpg',
+                alt: 'Interpretação artística de um pastel de nata, apresentando o creme disposto em espiral sobre o prato ao lado de uma telha folhada crocante.',
+                ingredientes: ['Creme rico de gemas e vagem de baunilha', 'Crocante de massa folhada artesanal', 'Caramelo salgado fluído', 'Canela em pó para finalização']
+            },
+            texturas: {
+                titulo: 'Texturas de Chocolate',
+                preco: '€ 18',
+                descricao: 'Um deleite profundo para os amantes de cacau. Uma ganache montada de chocolate negro a 70%, combinada com a acidez de um gel de mirtilo fresco e a leveza de uma esponja de avelã tostada.',
+                imagem: 'Imagens/chocolate.jpg',
+                alt: 'Sobremesa gourmet com diferentes formas de chocolate negro dispostas com gel purpura de mirtilo sobre um prato escuro.',
+                ingredientes: ['Chocolate Negro 70%', 'Mirtilos frescos em gel estruturado', 'Avelã mediterrânica tostada', 'Fumo decorativo de madeira de laranjeira']
+            }
+        };
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const pratoID = urlParams.get('prato') || 'bacalhau'; 
+        const prato = pratosData[pratoID];
+
+        if (prato) {
+            document.getElementById('pagina-titulo').textContent = "Maison | " + prato.titulo;
+            document.getElementById('detalhe-img').src = prato.imagem;
+            document.getElementById('detalhe-img').alt = prato.alt; // Atribuição de alt acessível dinâmico
+            document.getElementById('detalhe-titulo').textContent = prato.titulo;
+            document.getElementById('detalhe-preco').textContent = prato.preco;
+            document.getElementById('detalhe-descricao').textContent = prato.descricao;
+
+            const lista = document.getElementById('detalhe-ingredientes');
+            lista.innerHTML = '';
+            prato.ingredientes.forEach(ingrediente => {
+                const li = document.createElement('li');
+                // Estrutura acessível com ícone decorativo oculto para leitores de ecrã
+                li.innerHTML = '<i class="fas fa-check" style="color: #C4A676; margin-right: 10px; font-size: 12px;" aria-hidden="true"></i>' + ingrediente;
+                lista.appendChild(li);
+            });
+        }
+    </script>
+</body>
+</html>
